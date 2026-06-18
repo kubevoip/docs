@@ -1,10 +1,9 @@
 ---
 title: "Troubleshooting"
+weight: 105
 description: "Troubleshoot KubeVoIP SIP registration, call routing, RTP media, database readiness, LoadBalancer addresses, and Kubernetes resources."
 url: "/operations/troubleshooting/"
 ---
-
-# Troubleshooting
 
 Start with resource status:
 

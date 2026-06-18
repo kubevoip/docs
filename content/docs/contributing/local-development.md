@@ -1,10 +1,9 @@
 ---
 title: "Local development"
+weight: 140
 description: "Run KubeVoIP local development tasks, including uv dependency setup, Ruff linting, pytest, Helm rendering, and operator testing."
 url: "/contributing/local-development/"
 ---
-
-# Local development
 
 In the platform repository:
 

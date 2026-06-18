@@ -1,10 +1,9 @@
 ---
 title: "Cleanup"
+weight: 30
 description: "Remove a KubeVoIP quickstart installation from Kubernetes, including demo SIP users, routing resources, Services, and test database objects."
 url: "/getting-started/cleanup/"
 ---
-
-# Cleanup
 
 If you used a dedicated `telephony` namespace for the quickstart, uninstall the
 operator and delete the namespace:

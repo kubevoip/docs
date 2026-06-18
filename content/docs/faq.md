@@ -1,9 +1,9 @@
 ---
 title: "FAQ"
+weight: 950
+excludeFromPager: true
 description: "Frequently asked questions about KubeVoIP, including how it differs from kube-vip and where SIP, RTP, and PostgreSQL fit."
 ---
-
-# FAQ
 
 ## Is KubeVoIP related to kube-vip?
 

@@ -1,10 +1,9 @@
 ---
 title: "Helm values"
+weight: 130
 description: "Common KubeVoIP Helm chart values for installing the namespace-scoped operator and configuring image repositories and tags."
 url: "/reference/helm-values/"
 ---
-
-# Helm values
 
 The Helm chart exposes image repositories and tags for the operator and runtime
 components, plus standard Kubernetes settings such as ServiceAccount, RBAC,
