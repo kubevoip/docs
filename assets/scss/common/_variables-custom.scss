@@ -1,1 +1,12 @@
-// Override Doks Sass variables here.
+$kubevoip-blue: #06306f;
+
+$blue: $kubevoip-blue;
+$primary: $kubevoip-blue;
+$info: $kubevoip-blue;
+$link-color: $kubevoip-blue;
+$link-color-dark: lighten($kubevoip-blue, 45%);
+$button-color-dark: $link-color-dark;
+$focus-color: rgba(6, 48, 111, 0.25);
+$focus-color-dark: lighten($kubevoip-blue, 50%);
+$navbar-dark-hover-color: $link-color-dark;
+$navbar-dark-active-color: $link-color-dark;
