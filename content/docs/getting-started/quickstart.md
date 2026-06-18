@@ -16,7 +16,7 @@ helm install kubevoip oci://ghcr.io/kubevoip/charts/kubevoip \
   --version 0.5.0 \
   --namespace telephony --create-namespace
 
-uvx kubevoip --schema-source cluster -n telephony init
+uvx kubevoip -n telephony init
 
 kubectl -n telephony rollout status deployment/postgres --timeout=180s
 kubectl -n telephony rollout status deployment/main-sip-gateway --timeout=240s
@@ -38,7 +38,7 @@ To change an extension later, use the CLI to merge the update into the live
 resource:
 
 ```bash
-uvx kubevoip --schema-source cluster -n telephony user update alice --extension 102 --caller-id "Alice <102>"
+uvx kubevoip -n telephony user update alice --extension 102 --caller-id "Alice <102>"
 ```
 
 The quickstart uses a test PostgreSQL Deployment. Choose a production database
@@ -47,7 +47,7 @@ before running real users or trunks.
 If you already have PostgreSQL, use `init --database existing` instead:
 
 ```bash
-printf '%s' "$POSTGRES_PASSWORD" | uvx kubevoip --schema-source cluster -n telephony init \
+printf '%s' "$POSTGRES_PASSWORD" | uvx kubevoip -n telephony init \
   --database existing \
   --postgres-host "$POSTGRES_HOST" \
   --postgres-db kubevoip \
