@@ -1,6 +1,7 @@
 ---
 title: "Platform resources"
 description: "A practical overview of KubeVoIP Kubernetes resources and how SIPGateway, MediaRelay, SIPUser, SIPTrunk, and CallRoute fit together."
+url: "/concepts/platform-resources/"
 ---
 
 # Platform resources

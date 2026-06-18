@@ -1,6 +1,7 @@
 ---
 title: "Local development"
 description: "Run KubeVoIP local development tasks, including uv dependency setup, Ruff linting, pytest, Helm rendering, and operator testing."
+url: "/contributing/local-development/"
 ---
 
 # Local development

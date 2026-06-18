@@ -1,6 +1,7 @@
 ---
 title: "Contributing"
 description: "Contribute to KubeVoIP code, documentation, tests, release automation, runtime image repositories, and generated API reference pages."
+url: "/contributing/"
 ---
 
 # Contributing

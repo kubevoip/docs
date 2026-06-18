@@ -1,6 +1,7 @@
 ---
 title: "Install KubeVoIP"
 description: "Install the KubeVoIP Helm chart from GHCR OCI into a namespace-scoped Kubernetes operator release for SIP platform resources."
+url: "/getting-started/install/"
 ---
 
 # Install KubeVoIP

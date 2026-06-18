@@ -1,6 +1,7 @@
 ---
 title: "LoadBalancer networking"
 description: "Use Kubernetes LoadBalancer Services for KubeVoIP SIP signaling and RTP media traffic while preserving public and private UDP ports."
+url: "/networking/loadbalancer/"
 ---
 
 # LoadBalancer networking

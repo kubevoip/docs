@@ -1,6 +1,7 @@
 ---
 title: "HostNetwork media mode"
 description: "Use HostNetwork mode for RTPengine when Kubernetes Service NAT is not suitable and node-level UDP media forwarding is preferred."
+url: "/networking/hostnetwork/"
 ---
 
 # HostNetwork media mode

@@ -1,6 +1,7 @@
 ---
 title: "SIP on Kubernetes"
 description: "How KubeVoIP routes SIP signaling and RTP media through Kubernetes using Kamailio gateways and RTPengine media relay replicas."
+url: "/networking/sip-on-kubernetes/"
 ---
 
 # SIP on Kubernetes

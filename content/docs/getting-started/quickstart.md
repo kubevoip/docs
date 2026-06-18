@@ -1,6 +1,7 @@
 ---
 title: "Kubernetes VoIP quickstart"
 description: "Create a KubeVoIP SIP platform with two phones that can call each other through Kamailio and RTPengine on Kubernetes."
+url: "/getting-started/quickstart/"
 ---
 
 # Kubernetes VoIP quickstart

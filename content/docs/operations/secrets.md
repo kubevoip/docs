@@ -1,6 +1,7 @@
 ---
 title: "Secrets"
 description: "How KubeVoIP uses Kubernetes Secrets for SIP users, SIP trunks, outbound caller ID, digest authentication, and database access."
+url: "/operations/secrets/"
 ---
 
 # Secrets

@@ -1,6 +1,7 @@
 ---
 title: "PostgreSQL"
 description: "PostgreSQL stores KubeVoIP runtime routing, SIP registration, dial policy, trunk, caller ID, and digest HA1 data for Kamailio."
+url: "/operations/postgresql/"
 ---
 
 # PostgreSQL

@@ -1,6 +1,7 @@
 ---
 title: "Helm values"
 description: "Common KubeVoIP Helm chart values for installing the namespace-scoped operator and configuring image repositories and tags."
+url: "/reference/helm-values/"
 ---
 
 # Helm values

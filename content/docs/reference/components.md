@@ -1,6 +1,7 @@
 ---
 title: "Component images"
 description: "KubeVoIP operator and runtime component image repositories for Kamailio, RTPengine, and Asterisk, with tested platform image pins."
+url: "/reference/components/"
 ---
 
 # Component images

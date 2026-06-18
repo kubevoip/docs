@@ -16,7 +16,7 @@ copyright = "Copyright (c) 2026 KubeVoIP"
 [outputs]
   home = ["html", "rss", "sitemap", "searchIndex", "llms"]
   page = ["html", "markdown"]
-  section = ["html", "rss", "sitemap"]
+  section = ["html", "rss"]
 
 [outputFormats.searchIndex]
   mediaType = "application/json"

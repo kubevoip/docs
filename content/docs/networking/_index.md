@@ -1,6 +1,7 @@
 ---
 title: "Networking"
 description: "How KubeVoIP handles external SIP and RTP networking on Kubernetes with LoadBalancer Services, HostNetwork mode, and public addresses."
+url: "/networking/"
 ---
 
 # Networking

@@ -1,6 +1,7 @@
 ---
 title: "Operations"
 description: "Operate KubeVoIP with PostgreSQL, Kubernetes Secrets, namespace-scoped installs, upgrades, troubleshooting, and runtime data safety."
+url: "/operations/"
 ---
 
 # Operations

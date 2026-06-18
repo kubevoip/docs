@@ -1,6 +1,7 @@
 ---
 title: "Concepts"
 description: "Understand the KubeVoIP resource model for SIP on Kubernetes, including gateways, media relays, users, trunks, scopes, and routes."
+url: "/concepts/"
 ---
 
 # Concepts
