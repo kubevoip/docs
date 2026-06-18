@@ -6,10 +6,27 @@ url: "/getting-started/cleanup/"
 
 # Cleanup
 
-Delete the quickstart resources and uninstall the Helm release:
+If you used a dedicated `telephony` namespace for the quickstart, uninstall the
+operator and delete the namespace:
 
 ```bash
-kubectl delete -f https://raw.githubusercontent.com/kubevoip/kubevoip/main/examples/quickstart-two-phones.yaml
+helm uninstall kubevoip --namespace telephony
+kubectl delete namespace telephony
+```
+
+If you used an existing namespace, delete only the quickstart objects instead:
+
+```bash
+kubectl -n telephony delete callroute user-100 user-101 --ignore-not-found
+kubectl -n telephony delete sipuser alice bob --ignore-not-found
+kubectl -n telephony delete dialpolicy internal-only --ignore-not-found
+kubectl -n telephony delete callscope internal --ignore-not-found
+kubectl -n telephony delete sipgateway main --ignore-not-found
+kubectl -n telephony delete mediarelay main --ignore-not-found
+kubectl -n telephony delete networkprofile public --ignore-not-found
+kubectl -n telephony delete deployment postgres --ignore-not-found
+kubectl -n telephony delete service postgres --ignore-not-found
+kubectl -n telephony delete secret postgres-app alice-sip bob-sip --ignore-not-found
 helm uninstall kubevoip --namespace telephony
 ```
 

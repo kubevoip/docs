@@ -6,5 +6,5 @@ url: "/getting-started/"
 
 # Getting Started
 
-Install KubeVoIP with Helm, apply the quickstart resources, and register two SIP
-phones that can call each other.
+Install KubeVoIP with Helm, create SIP users and routes with the KubeVoIP CLI,
+and register two SIP phones that can call each other.
