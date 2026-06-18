@@ -1,0 +1,10 @@
+<footer class="footer docs-footer text-muted">
+  <div class="container">
+    <ul class="list-inline mb-2">
+      {{ range .Site.Menus.footer -}}
+        <li class="list-inline-item"><a class="text-muted" href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+      {{- end }}
+    </ul>
+    <p class="mb-0">{{ site.Params.footer | safeHTML }}</p>
+  </div>
+</footer>

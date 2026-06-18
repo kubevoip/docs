@@ -1,0 +1,83 @@
+{{ define "main" }}
+<section class="docs-hero section container-fluid mt-n3 pb-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-10 col-xl-8 text-center">
+      <p class="eyebrow">KubeVoIP Docs</p>
+      <h1>{{ .Title }}</h1>
+      <p class="lead">{{ .Params.lead }}</p>
+      <div class="docs-hero-actions">
+        <a class="btn btn-primary btn-lg rounded-pill" href="/getting-started/quickstart/">Start the quickstart</a>
+        <a class="btn btn-outline-primary btn-lg rounded-pill" href="/concepts/platform-resources/">Explore concepts</a>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "sidebar-prefooter" }}
+<section class="section section-md docs-home">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-6 col-xl-4">
+        <a class="docs-card" href="/getting-started/quickstart/">
+          <span>Getting Started</span>
+          <h2>Two-phone quickstart</h2>
+          <p>Install the Helm chart, apply the demo platform, register Alice and Bob, and place the first SIP call.</p>
+        </a>
+      </div>
+      <div class="col-md-6 col-xl-4">
+        <a class="docs-card" href="/concepts/platform-resources/">
+          <span>Concepts</span>
+          <h2>Platform resources</h2>
+          <p>Learn how SIPGateway, MediaRelay, SIPUser, SIPTrunk, DialPolicy, CallScope, and CallRoute fit together.</p>
+        </a>
+      </div>
+      <div class="col-md-6 col-xl-4">
+        <a class="docs-card" href="/networking/sip-on-kubernetes/">
+          <span>Networking</span>
+          <h2>SIP and RTP flow</h2>
+          <p>Understand external addresses, LoadBalancer mode, HostNetwork mode, port preservation, and media relay behavior.</p>
+        </a>
+      </div>
+      <div class="col-md-6 col-xl-4">
+        <a class="docs-card" href="/operations/postgresql/">
+          <span>Operations</span>
+          <h2>PostgreSQL runtime data</h2>
+          <p>See what KubeVoIP stores in PostgreSQL, why HA1 values matter, and how migrations are handled.</p>
+        </a>
+      </div>
+      <div class="col-md-6 col-xl-4">
+        <a class="docs-card" href="/operations/secrets/">
+          <span>Security</span>
+          <h2>Secrets and credentials</h2>
+          <p>Keep SIP passwords, trunk credentials, caller ID values, and database access out of ConfigMaps and Git.</p>
+        </a>
+      </div>
+      <div class="col-md-6 col-xl-4">
+        <a class="docs-card" href="/reference/api/">
+          <span>Reference</span>
+          <h2>Generated API reference</h2>
+          <p>Browse current Kubernetes resource fields, validation constraints, names, scopes, and API versions.</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-md docs-path">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <h2>Suggested reading path</h2>
+        <ol>
+          <li><a href="/getting-started/install/">Install KubeVoIP</a> into a namespace-scoped operator release.</li>
+          <li><a href="/getting-started/quickstart/">Run the two-phone quickstart</a> and confirm internal SIP calling.</li>
+          <li><a href="/networking/loadbalancer/">Read the LoadBalancer networking guide</a> before exposing SIP or RTP externally.</li>
+          <li><a href="/operations/postgresql/">Choose a PostgreSQL database</a> and protect credential-equivalent runtime data.</li>
+          <li><a href="/kubernetes-sip-trunking/">Add provider-neutral SIP trunks</a> when you are ready for external calls.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

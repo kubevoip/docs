@@ -1,3 +1,102 @@
 .content a {
   text-decoration-thickness: 0.08em;
 }
+
+.docs-hero {
+  padding-top: 4.5rem;
+}
+
+.docs-hero .eyebrow {
+  color: var(--sl-color-primary-600, #3155ff);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+
+.docs-hero h1 {
+  font-size: clamp(2.4rem, 5vw, 4.6rem);
+  letter-spacing: -0.04em;
+}
+
+.docs-hero .lead {
+  margin: 1rem auto 0;
+  max-width: 48rem;
+}
+
+.docs-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.docs-home {
+  padding-top: 2rem;
+}
+
+.docs-card {
+  border: 1px solid var(--sl-color-gray-200, #e5e7eb);
+  border-radius: 1.25rem;
+  color: inherit;
+  display: block;
+  height: 100%;
+  padding: 1.5rem;
+  text-decoration: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.docs-card:hover {
+  border-color: var(--sl-color-primary-400, #6b7cff);
+  box-shadow: 0 1rem 2.5rem rgba(15, 23, 42, 0.08);
+  color: inherit;
+  transform: translateY(-2px);
+}
+
+.docs-card span {
+  color: var(--sl-color-primary-600, #3155ff);
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+
+.docs-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.6rem;
+}
+
+.docs-card p {
+  margin-bottom: 0;
+}
+
+.docs-path {
+  padding-top: 1rem;
+}
+
+.docs-path h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.docs-path ol {
+  margin: 0 auto;
+  max-width: 52rem;
+}
+
+.docs-path li + li {
+  margin-top: 0.75rem;
+}
+
+.docs-footer {
+  font-size: 0.82rem;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.docs-footer .list-inline-item:not(:last-child) {
+  margin-right: 1rem;
+}
