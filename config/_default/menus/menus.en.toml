@@ -1,0 +1,60 @@
+[[main]]
+  name = "Home"
+  url = "https://kubevoip.com/"
+  weight = 10
+
+[[main]]
+  name = "Docs"
+  url = "/"
+  weight = 20
+
+[[main]]
+  name = "GitHub"
+  url = "https://github.com/kubevoip/kubevoip"
+  weight = 30
+
+[[sidebar_docs]]
+  name = "Getting Started"
+  pageRef = "/docs/getting-started"
+  weight = 10
+
+[[sidebar_docs]]
+  name = "Concepts"
+  pageRef = "/docs/concepts"
+  weight = 20
+
+[[sidebar_docs]]
+  name = "Networking"
+  pageRef = "/docs/networking"
+  weight = 30
+
+[[sidebar_docs]]
+  name = "Operations"
+  pageRef = "/docs/operations"
+  weight = 40
+
+[[sidebar_docs]]
+  name = "Reference"
+  pageRef = "/docs/reference"
+  weight = 50
+
+[[sidebar_docs]]
+  name = "Contributing"
+  pageRef = "/docs/contributing"
+  weight = 60
+
+[[footer]]
+  name = "Website"
+  url = "https://kubevoip.com/"
+  weight = 10
+
+[[footer]]
+  name = "GitHub"
+  url = "https://github.com/kubevoip/kubevoip"
+  weight = 20
+
+[[footer]]
+  name = "Security"
+  url = "https://github.com/kubevoip/kubevoip/security"
+  weight = 30
+

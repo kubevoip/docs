@@ -1,0 +1,19 @@
+defaultMarkdownHandler = "goldmark"
+
+[goldmark]
+  [goldmark.parser]
+    autoHeadingID = true
+    autoHeadingIDType = "github"
+  [goldmark.renderer]
+    unsafe = true
+
+[highlight]
+  codeFences = true
+  noClasses = false
+  style = "monokai"
+
+[tableOfContents]
+  startLevel = 2
+  endLevel = 3
+  ordered = false
+

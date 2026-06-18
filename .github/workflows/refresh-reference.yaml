@@ -1,0 +1,36 @@
+name: Refresh Reference
+on:
+  workflow_dispatch:
+    inputs:
+      platform_ref:
+        description: Platform repository ref to generate from.
+        required: false
+        default: main
+  repository_dispatch:
+    types: [platform-release]
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/checkout@v6
+        with:
+          repository: kubevoip/kubevoip
+          path: _platform
+          ref: ${{ github.event.client_payload.ref || github.event.inputs.platform_ref || 'main' }}
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: python -m pip install pyyaml
+      - run: python _platform/scripts/export-docs-reference.py --output content/docs/reference/api.md
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: docs/generated-reference
+          delete-branch: true
+          title: Refresh generated API reference
+          commit-message: Refresh generated API reference
+          body: |
+            Refreshes the generated Kubernetes API reference from kubevoip/kubevoip.

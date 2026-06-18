@@ -1,0 +1,60 @@
+title = "KubeVoIP Docs"
+baseurl = "https://docs.kubevoip.com/"
+disableAliases = true
+disableHugoGeneratorInject = true
+enableEmoji = true
+enableGitInfo = false
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
+languageCode = "en-US"
+summarylength = 30
+copyright = "Copyright (c) 2026 KubeVoIP"
+
+[build.buildStats]
+  enable = true
+
+[outputs]
+  home = ["html", "rss", "sitemap", "searchIndex", "llms"]
+  page = ["html", "markdown"]
+  section = ["html", "rss", "sitemap"]
+
+[outputFormats.searchIndex]
+  mediaType = "application/json"
+  baseName = "search-index"
+  isPlainText = true
+  notAlternative = true
+
+[outputFormats.markdown]
+  baseName = "index"
+  isHTML = false
+  isPlainText = true
+  mediaType = "text/markdown"
+
+[outputFormats.llms]
+  baseName = "llms"
+  isHTML = false
+  isPlainText = true
+  mediaType = "text/plain"
+
+[outputFormats.sitemap]
+  mediaType = "application/xml"
+  baseName = "sitemap"
+  isHTML = false
+  isPlainText = true
+  noUgly = true
+  rel = "sitemap"
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.7
+
+[permalinks]
+  docs = "/:sections[1:]/:slug/"
+
+[minify.tdewolff.html]
+  keepComments = false
+  keepWhitespace = false
+
+[pagination]
+  pagerSize = 10
