@@ -6,6 +6,13 @@
   padding-top: 4.5rem;
 }
 
+.docs-hero-logo {
+  display: block;
+  height: auto;
+  margin: 0 auto 1.25rem;
+  width: clamp(5rem, 10vw, 7rem);
+}
+
 .docs-hero .eyebrow {
   color: var(--sl-color-primary-600, #3155ff);
   font-weight: 700;
