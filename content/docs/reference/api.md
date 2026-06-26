@@ -232,11 +232,33 @@ change while the resources are still alpha.
 | `spec.observability.capture.hepTransport` | enum: `udp` | no | default: `udp` |
 | `spec.observability.capture.includePayload` | boolean | no | default: `True` |
 | `spec.observability.capture.type` | enum: `Homer` | no | default: `Homer` |
+| `spec.observability.sdp` | object | no | - |
+| `spec.observability.sdp.enabled` | boolean | no | default: `False` |
+| `spec.observability.sipHeaders` | object | no | - |
+| `spec.observability.sipHeaders.enabled` | boolean | no | default: `False` |
 | `spec.replicas` | integer | no | minimum: `1`<br>maximum: `32`<br>default: `1` |
 | `spec.service` | object | no | - |
 | `spec.service.annotations` | object | no | - |
 | `spec.service.externalTrafficPolicy` | enum: `Cluster`, `Local` | no | default: `Cluster` |
 | `spec.service.type` | enum: `ClusterIP`, `LoadBalancer` | no | default: `ClusterIP` |
+
+### SIPGateway observability
+
+| Field | Type | Required | Constraints |
+| --- | --- | --- | --- |
+| `spec.observability` | object | no | - |
+| `spec.observability.capture` | object | no | HOMER capture requires includePayload=true |
+| `spec.observability.capture.captureMode` | enum: `transaction`, `dialog` | no | default: `transaction` |
+| `spec.observability.capture.enabled` | boolean | no | default: `False` |
+| `spec.observability.capture.hepAddress` | string | no | min length: `1`<br>max length: `253`<br>default: `homer-heplify.telemetry.svc.cluster.local` |
+| `spec.observability.capture.hepPort` | integer | no | minimum: `1`<br>maximum: `65535`<br>default: `9060` |
+| `spec.observability.capture.hepTransport` | enum: `udp` | no | default: `udp` |
+| `spec.observability.capture.includePayload` | boolean | no | default: `True` |
+| `spec.observability.capture.type` | enum: `Homer` | no | default: `Homer` |
+| `spec.observability.sdp` | object | no | - |
+| `spec.observability.sdp.enabled` | boolean | no | default: `False` |
+| `spec.observability.sipHeaders` | object | no | - |
+| `spec.observability.sipHeaders.enabled` | boolean | no | default: `False` |
 
 Status is managed by the KubeVoIP operator through the Kubernetes status subresource.
 Status fields are intentionally omitted from this generated reference because they can
