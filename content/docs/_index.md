@@ -37,6 +37,8 @@ trunks.
 - [PostgreSQL](/operations/postgresql/) covers runtime data, migrations, and
   HA1 storage.
 - [Secrets](/operations/secrets/) explains credential handling.
+- [Observability](/operations/observability/) covers SIP/RTP logs and optional
+  HOMER HEP capture.
 - [Production setup](/operations/production/) explains real SIP device
   credentials, production PostgreSQL, and dial policy.
 - [Troubleshooting](/operations/troubleshooting/) gives the first commands to
