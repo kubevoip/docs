@@ -10,6 +10,7 @@ on:
         required: false
         default: main
 permissions:
+  attestations: write
   contents: read
   pages: write
   id-token: write
@@ -42,6 +43,11 @@ jobs:
       - run: git diff --exit-code content/docs/reference/api.md
       - run: npm ci
       - run: npm run build
+      - name: Attest Pages artifact contents
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        uses: actions/attest-build-provenance@v4.1.0
+        with:
+          subject-path: public/**
       - uses: actions/upload-pages-artifact@v4
         if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         with:
