@@ -26,8 +26,10 @@ LoadBalancer support or MetalLB.
 ## Install and initialize
 
 ```bash
-helm install kubevoip oci://ghcr.io/kubevoip/charts/kubevoip \
-  --version 0.5.0 \
+helm repo add kubevoip https://charts.kubevoip.com
+helm repo update
+helm install kubevoip kubevoip/kubevoip \
+  --version 0.6.7 \
   --namespace telephony --create-namespace
 
 uvx kubevoip -n telephony init
